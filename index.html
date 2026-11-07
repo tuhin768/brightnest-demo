@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="BrightNest Cleaning Co. — dependable home cleaning with simple online booking.">
+  <meta name="theme-color" content="#123c35">
+  <title>BrightNest Cleaning Co. | A Cleaner, Calmer Home</title>
+  <style>
+    :root{--green:#123c35;--green2:#1e6255;--mint:#e8f3ed;--cream:#fbfaf6;--ink:#172522;--muted:#66736e;--orange:#e9a66b;--white:#fff;--line:#e4e9e5;--shadow:0 18px 55px rgba(18,60,53,.10)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+    .top{background:var(--green);color:#e8f3ed;text-align:center;padding:9px 16px;font-size:13px;letter-spacing:.02em}
+    header{position:sticky;top:0;z-index:20;background:rgba(251,250,246,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(228,233,229,.8)}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:11px;font-weight:800;font-size:19px;letter-spacing:-.04em}.logo{width:38px;height:38px;border-radius:13px;background:var(--green);color:white;display:grid;place-items:center;font-size:20px}
+    .links{display:flex;align-items:center;gap:28px;font-size:14px;color:#45534e}.links a:hover{color:var(--green2)}.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:999px;padding:13px 21px;background:var(--green);color:white;font-weight:700;font-size:14px;cursor:pointer;transition:.2s}.btn:hover{background:var(--green2);transform:translateY(-1px)}.btn.light{background:white;color:var(--green)}.btn.outline{background:transparent;color:var(--green);border:1px solid #b9c9c0}
+    .hero{padding:76px 0 70px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:54px}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--green2);font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:.14em}.dot{width:8px;height:8px;border-radius:50%;background:var(--orange)}
+    h1{font-size:clamp(42px,5.6vw,68px);line-height:1.04;letter-spacing:-.065em;margin:18px 0 20px;color:var(--green);max-width:650px}.hero p{font-size:17px;color:var(--muted);max-width:520px;margin:0 0 28px}.actions{display:flex;gap:12px;flex-wrap:wrap}.proof{display:flex;align-items:center;gap:16px;margin-top:35px;color:var(--muted);font-size:13px}.avatars{display:flex}.avatars span{width:30px;height:30px;border:2px solid var(--cream);border-radius:50%;background:#d8e6dd;margin-left:-7px;display:grid;place-items:center;font-size:12px}.avatars span:first-child{margin-left:0}
+    .hero-photo{position:relative;min-height:480px}.hero-photo img{width:100%;height:480px;object-fit:cover;border-radius:28px;box-shadow:var(--shadow)}.float-card{position:absolute;left:-28px;bottom:28px;background:white;border-radius:18px;padding:17px 20px;box-shadow:var(--shadow);max-width:230px}.float-card strong{display:block;color:var(--green);font-size:15px}.float-card small{color:var(--muted)}
+    section{padding:76px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 40px}.section-head h2{font-size:clamp(30px,4vw,43px);line-height:1.12;letter-spacing:-.05em;color:var(--green);margin:12px 0}.section-head p{color:var(--muted);margin:0}.services{background:#f0f5f0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:white;border:1px solid var(--line);border-radius:20px;padding:27px;box-shadow:0 8px 30px rgba(18,60,53,.04)}.icon{width:48px;height:48px;border-radius:15px;background:var(--mint);display:grid;place-items:center;font-size:23px}.card h3{color:var(--green);margin:17px 0 8px;font-size:19px}.card p{color:var(--muted);font-size:14px;margin:0}.learn{display:inline-block;margin-top:17px;color:var(--green2);font-size:13px;font-weight:800}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.split img{width:100%;height:420px;object-fit:cover;border-radius:24px}.split h2{font-size:clamp(32px,4vw,46px);line-height:1.1;letter-spacing:-.05em;color:var(--green);margin:13px 0}.split p{color:var(--muted)}.checks{padding:0;list-style:none;margin:24px 0}.checks li{margin:12px 0;color:#40514a}.checks li:before{content:"✓";color:var(--green2);font-weight:900;margin-right:11px}
+    .steps{background:var(--green);color:white}.steps .section-head h2,.steps .section-head p{color:white}.steps .eyebrow{color:#b8d9c9}.step-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}.step{border-top:1px solid rgba(255,255,255,.28);padding-top:20px}.step b{font-size:13px;color:#b8d9c9;letter-spacing:.1em}.step h3{font-size:20px;margin:10px 0}.step p{color:#d0dfd8;font-size:14px;margin:0}
+    .quote{background:#f0f5f0}.quote-box{max-width:790px;margin:auto;text-align:center;background:white;border-radius:24px;padding:42px;box-shadow:var(--shadow)}.stars{color:#d9944d;letter-spacing:4px}.quote blockquote{font-size:22px;line-height:1.4;letter-spacing:-.025em;color:var(--green);margin:16px 0}.quote small{color:var(--muted)}
+    .contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:50px;align-items:start}.contact-copy h2{font-size:clamp(32px,4vw,46px);line-height:1.1;letter-spacing:-.05em;color:var(--green);margin:12px 0}.contact-copy p{color:var(--muted)}.contact-detail{margin-top:25px;color:var(--green);font-weight:700}.form{background:white;border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:var(--shadow)}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{display:block;font-size:13px;font-weight:700;color:#40514a;margin:0 0 7px}input,select,textarea{width:100%;padding:13px 14px;border:1px solid #dce4de;border-radius:11px;background:#fcfdfb;font:inherit;font-size:14px;margin-bottom:16px;color:var(--ink)}textarea{min-height:110px;resize:vertical}.form-note{font-size:12px;color:var(--muted);margin:12px 0 0}.notice{display:none;margin-top:14px;padding:12px;border-radius:10px;background:var(--mint);color:var(--green);font-size:13px}
+    footer{background:#0d2e29;color:#d5e3dc;padding:35px 0}.foot{display:flex;justify-content:space-between;gap:20px;align-items:center}.foot small{color:#a8beb3}.disclaimer{background:#fff5e8;color:#79501e;padding:12px 18px;text-align:center;font-size:12px}
+    @media(max-width:850px){.hero-grid,.split,.contact-grid{grid-template-columns:1fr}.hero{padding-top:48px}.hero-photo{min-height:360px}.hero-photo img{height:380px}.float-card{left:12px}.cards{grid-template-columns:1fr 1fr}.links{gap:14px}.nav>.btn{display:none}}
+    @media(max-width:580px){.wrap{width:min(100% - 30px,1160px)}.nav{height:66px}.links{display:none}.hero-grid{gap:30px}.hero-photo img{height:320px}.cards,.step-grid,.form-row{grid-template-columns:1fr}.split{gap:28px}.split img{height:300px}section{padding:58px 0}.quote-box{padding:28px 20px}.quote blockquote{font-size:19px}.foot{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+  <div class="top">A little more time for what matters — let us handle the cleaning.</div>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#"><span class="logo">✦</span> BrightNest <span style="font-weight:500;color:#728078">Cleaning Co.</span></a>
+      <nav class="links" aria-label="Main navigation"><a href="#services">Services</a><a href="#about">Why BrightNest</a><a href="#process">How it works</a><a href="#contact">Contact</a></nav>
+      <a class="btn" href="#contact">Get a free estimate</a>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow"><span class="dot"></span> Thoughtful home cleaning</span>
+          <h1>A fresh, calm home starts here.</h1>
+          <p>Come home to clean surfaces, cared-for spaces, and one less thing on your to-do list. Reliable home cleaning, made refreshingly simple.</p>
+          <div class="actions"><a class="btn" href="#contact">Request a free estimate&nbsp; →</a><a class="btn outline" href="#services">Explore services</a></div>
+          <div class="proof"><div class="avatars"><span>☺</span><span>✦</span><span>✓</span></div><span>Friendly service. Clear communication. A home that feels like yours.</span></div>
+        </div>
+        <div class="hero-photo">
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85" alt="Bright, tidy living room with comfortable furniture">
+          <div class="float-card"><strong>Cleaning that fits your life</strong><small>One-time, recurring, and move-in cleaning.</small></div>
+        </div>
+      </div>
+    </section>
+    <section class="services" id="services">
+      <div class="wrap">
+        <div class="section-head"><span class="eyebrow">What we do</span><h2>More than tidy. A little peace of mind.</h2><p>Choose the cleaning support that works for your home and schedule.</p></div>
+        <div class="cards">
+          <article class="card"><div class="icon">⌂</div><h3>Standard home cleaning</h3><p>Thoughtful care for kitchens, bathrooms, bedrooms, and the spaces you use every day.</p><a class="learn" href="#contact">Ask about standard cleaning →</a></article>
+          <article class="card"><div class="icon">✧</div><h3>Deep cleaning</h3><p>Extra attention for built-up dust, detailed surfaces, and those often-missed corners.</p><a class="learn" href="#contact">Ask about deep cleaning →</a></article>
+          <article class="card"><div class="icon">▣</div><h3>Move-in / move-out</h3><p>Help prepare an empty home for its next chapter, from top to bottom.</p><a class="learn" href="#contact">Ask about moving cleaning →</a></article>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="wrap split">
+        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1100&q=85" alt="Cleaning professional carefully cleaning a home surface">
+        <div><span class="eyebrow"><span class="dot"></span> The BrightNest difference</span><h2>Care you can feel. Service you can count on.</h2><p>A good cleaning service should make life easier from the first message to the final walkthrough. We keep the process straightforward and the details in focus.</p><ul class="checks"><li>Simple estimates with no confusing surprises</li><li>Cleaning plans shaped around your priorities</li><li>Clear communication before and after your visit</li><li>Respect for your home, time, and preferences</li></ul><a class="btn" href="#contact">Tell us what you need</a></div>
+      </div>
+    </section>
+    <section class="steps" id="process">
+      <div class="wrap">
+        <div class="section-head"><span class="eyebrow">A simple process</span><h2>Three steps to a fresher space.</h2><p>Getting started should feel easy. Here's what the process looks like.</p></div>
+        <div class="step-grid">
+          <div class="step"><b>01 / TELL US</b><h3>Share your space</h3><p>Tell us about your home, the service you need, and your preferred timing.</p></div>
+          <div class="step"><b>02 / PLAN IT</b><h3>Get a clear estimate</h3><p>We'll discuss the details and confirm a plan that fits your priorities.</p></div>
+          <div class="step"><b>03 / RELAX</b><h3>Enjoy your home</h3><p>We take care of the agreed cleaning while you focus on what matters.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="quote">
+      <div class="wrap quote-box"><div class="stars">★★★★★</div><blockquote>“The best kind of service is the kind that makes your day feel a little lighter.”</blockquote><small>Sample brand statement — replace with a genuine customer review only after receiving permission.</small></div>
+    </section>
+    <section id="contact">
+      <div class="wrap contact-grid">
+        <div class="contact-copy"><span class="eyebrow"><span class="dot"></span> Let's make a plan</span><h2>Ready for a home that feels refreshed?</h2><p>Tell us a little about your space. We'll follow up to discuss the right cleaning option and an estimate.</p><div class="contact-detail">✉ hello@brightnest-demo.com<br><span style="font-size:13px;font-weight:500;color:#66736e">Demo contact — replace before publishing for a real business.</span></div></div>
+        <form class="form" id="estimateForm">
+          <div class="form-row"><div><label for="name">Your name</label><input id="name" name="name" placeholder="Jane Smith" required></div><div><label for="email">Email address</label><input id="email" name="email" type="email" placeholder="jane@example.com" required></div></div>
+          <div class="form-row"><div><label for="service">What do you need?</label><select id="service" name="service" required><option value="">Choose a service</option><option>Standard home cleaning</option><option>Deep cleaning</option><option>Move-in / move-out</option><option>Not sure yet</option></select></div><div><label for="size">Home size</label><select id="size" name="size"><option>Not sure</option><option>1–2 bedrooms</option><option>3–4 bedrooms</option><option>5+ bedrooms</option></select></div></div>
+          <label for="message">Anything else we should know?</label><textarea id="message" name="message" placeholder="Your priorities, preferred timing, or questions..."></textarea>
+          <button class="btn" type="submit">Request my estimate&nbsp; →</button>
+          <p class="form-note">Demo only: this form currently does not send or store enquiries. Connect a real form service or business email before using this site for customers.</p>
+          <div class="notice" id="notice" role="status">Thanks! The form design is working. This demo is not connected to an inbox yet.</div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <div class="disclaimer">Portfolio demonstration website. BrightNest Cleaning Co. is a fictional sample business; images are illustrative.</div>
+  <footer><div class="wrap foot"><a class="brand" href="#" style="color:white"><span class="logo" style="background:#e8f3ed;color:#123c35">✦</span> BrightNest Cleaning Co.</a><small>© <span id="year"></span> BrightNest Cleaning Co. · Demo website</small></div></footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('estimateForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      if(!this.reportValidity()) return;
+      document.getElementById('notice').style.display='block';
+      this.reset();
+    });
+  </script>
+</body>
+</html>
